@@ -14,11 +14,11 @@ const Home = () => {
     },
     {
       target: '#address',
-      content: 'This is actual name',
+      content: 'This is address field',
     },
     {
       target: '#actual_address',
-      content: 'This is actual name',
+      content: 'This is actual address',
     }
   ]);
 
