@@ -11,6 +11,14 @@ const Home = () => {
     {
       target: '#actual_name',
       content: 'This is actual name',
+    },
+    {
+      target: '#address',
+      content: 'This is actual name',
+    },
+    {
+      target: '#actual_address',
+      content: 'This is actual name',
     }
   ]);
 
@@ -22,15 +30,15 @@ const Home = () => {
 
   return (
     <div>
-      <Joyride steps={steps} showSkipButton/>
+      <Joyride steps={steps} showSkipButton continuous/>
       <div style={{ border: '1px solid black' }}>
         <div id='name'> Name </div>
-        <div id='actual_name'> Saiprasad Devare </div>
+        <div id='actual_name'> My name is XYZ </div>
       </div>
 
       <div style={{ border: '1px solid black', marginTop: '3rem' }}>
         <div id='address'> Address </div>
-        <div id='actual_address'> Shri Dadasaheb chougule colony </div>
+        <div id='actual_address'> Follow me to know address </div>
       </div>
     </div>
   )
