@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ ### Requirement
 
-Things you may want to cover:
+  - Ruby version 3.0.0
+  - Postgres
 
-* Ruby version
+ ### Setup
+  - Create database for tour_guide application.
+  - Create a user in postgres
+  - Give permission and password for the user
 
-* System dependencies
 
-* Configuration
+    ### Steps
 
-* Database creation
+      ##### Create Database for the tour gide application
+      - `createdb -U tour_guide tour_guide_development`
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+      ##### Open the postgres console and follow below comand
+      - `CREATE role tour_guide with createdb login password 'password_here';`
+      - `GRANT ALL PRIVILEGES ON DATABASE "tour_guide_development" to tour_guide;`
